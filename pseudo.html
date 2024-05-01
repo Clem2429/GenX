@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GenX | Le Générateur aux multiples fonctionnalités ! - Générez dès maintenant et gratuitement des mots de passe, des nombres, des pseudos, du texte ! De multiples fonctionnalités s'offrent à vous ! Profitez-en ! Conçu et designé par Clément Legoubé.">
+    <meta name="description" content="GenX | Le Générateur aux multiples fonctionnalités ! - Découvrez notre générateur de pseudos ! Générez-en autant que vous le souhaitez et sur plusieurs thèmes gratuitement ! Conçu et designé par Clément Legoubé.">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/pseudo.css">
     <link rel="icon" href="ressources/logo/logo.png" type="image/x-icon"/>
-    <title>GenX | Le Générateur aux multiples fonctionnalités !</title>
+    <title>GenX | Générez dès maintenant un pseudo !</title>
 </head>
 <body>
     <details>
@@ -29,7 +29,7 @@
         </div>
         </a>
         <div class="links_box">
-            <div class="links_nav link_home active">
+            <div class="links_nav link_home">
                 <img class="icone_filter" src="ressources/icones/nav/home.png" alt="Icone de Maison">
                 <a href="index.html" class="link_navigation">Accueil</a>
             </div>
@@ -41,7 +41,7 @@
                 <img class="icone_filter" src="ressources/icones/nav/lettre.png" alt="Icone de Lettres">
                 <a href="letter.html" class="link_navigation">Lettre</a>
             </div>
-            <div class="links_nav">
+            <div class="links_nav active">
                 <img class="icone_filter" src="ressources/icones/nav/pseudo.png" alt="Icone d'Utilisateur">
                 <a href="pseudo.html" class="link_navigation">Pseudo</a>
             </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="links_nav">
                 <img src="ressources/icones/nav/uk.png" alt="Icone Drapeau UK">
-                <a href="en/index.html" class="link_navigation">Go to English Version</a>
+                <a href="#" class="link_navigation">Go to English Version</a>
             </div>
             <div class="legal_info">
                 <a href="#" class="link_info">Mentions Légales</a>&ensp;●&ensp;
@@ -77,32 +77,59 @@
     <main>
     
         <section class="clipped-section first_section">
-            <h1>Bienvenue sur <span class="Gen">Gen</span><span class="X">X</span></h1>
-            <h2>le <i>Générateur polyvalent</i> &nbsp;!</h2>
+            <h1>Générez un pseudo</h1>
+            <h2>d'un <i>simple clique</i> &nbsp;!</h2>
         </section>
         <br><br>
-        <section class="second_section">
-            <h3>Générez <u><i>gratuitement</i></u> &nbsp;des nombres, des mots de passe et bien encore grâce à <span class="Gen">Gen</span><span class="X">X</span>&ensp; !</h3>
-            <br><br>
-            <a href="#links-section"><button>Générer dès maintenant ▶</button></a>
-        </section>
-        <section class="second_bandeau">
-            <h4>Découvrez nos modules !</h4>
-        </section>
-        <section id="links-section">
-            <div class="links_container">
-                <div class="box">
-                    <a href="number.html"><button><img src="ressources/icones/nav/nombres.png" alt="Icone de nombres">Générez un nombre</button></a>
-                    <a href="letter.html"><button><img src="ressources/icones/nav/lettre.png" alt="Icone de lettres">Générer une lettre</button></a>
-                    <a href="pseudo.html"><button><img src="ressources/icones/nav/pseudo.png" alt="Icone d'utilisateur">Générer un pseudo</button></a>
-                </div>
-                <div class="box">
-                    <a href="color.html"><button><img src="ressources/icones/nav/couleur.png" alt="Icone de palette de couleur">Générez une couleur</button></a>
-                    <a href="lorem.html"><button><img src="ressources/icones/nav/lorem.png" alt="Icone de fichier texte">Générer du Lorem Ipsum</button></a>
-                    <a href="password.html"><button><img src="ressources/icones/nav/mdp.png" alt="Icone de mot de passe">Générer un mot de passe</button></a>
-                </div>
+        <section>
+            <div class="form_container">
+            <div class="form_box">
+            <label for="theme">Choisissez un thème :</label>
+            <input type="text" id="theme" list="themes" placeholder="Sélectionnez un thème..." required>
+            <datalist id="themes">
+                <option value="fantaisie">
+                <option value="science-fiction">
+                <option value="animaux">
+                <option value="nature">
+                <option value="espace">
+                <option value="mythologie">
+                <option value="couleurs">
+                <option value="nourriture">
+                <option value="temps">
+                <option value="émotions">
+                <option value="musique">
+                <option value="véhicules">
+                <option value="technologie">
+                <option value="sports">
+                <option value="corps humain">
+                <option value="livres">
+                <option value="signes du zodiaque">
+                <option value="pays">
+                <option value="films">
+            </datalist>
+            <p class="text_info_datalist">Sélection obligatoire | Pour un pseudo sans thème, sélectionnez "fantaisie"</p>
+            <br>
+<label for="inclureChiffres">
+            <input type="checkbox" id="inclureChiffres" checked>
+            Inclure des chiffres</label>
+            <br>           
+            <label for="nombreLettres">Nombre de lettres :</label>
+            <input type="number" id="nombreLettres" min="1" max="20" value="8">
+            <br>
+            <label for="nombrePseudos">Nombre de pseudos :</label>
+            <input type="number" id="nombrePseudos" min="1" value="10">
+            <br>
+            <button class="button-generate" onclick="genererPseudos()">Générer Pseudos</button>
+        </div>
+            <div class="form_box">
+                <button onclick="copyText()" class="button-copy"><span class="span_button_emission_star">
+                    <img src="ressources/icones/buttons/copier.png" alt="Copier" height="25px" width="25px">Copier le résultat</span></button><br><br>            
+                <p class="text_info">Résultats :</p>
+                <br>
+                <div id="pseudosGeneres"></div>
             </div>
-        </section>
+        </div>
+        </section>        
     </main>
     <br><br><br>
     <footer>
@@ -110,5 +137,7 @@
         <br>
         <p class="text_conception">Conçu & Designé par Clément Legoubé</p>
     </footer>
+    <script src="js/pseudo.js"></script>
 </body>
 </html>
+

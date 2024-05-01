@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GenX | Le Générateur aux multiples fonctionnalités ! - Générez dès maintenant et gratuitement des mots de passe, des nombres, des pseudos, du texte ! De multiples fonctionnalités s'offrent à vous ! Profitez-en ! Conçu et designé par Clément Legoubé.">
+    <meta name="description" content="GenX | Le Générateur aux multiples fonctionnalités ! - Découvrez notre générateur de nombres ! Générez-en autant que vous le souhaitez gratuitement ! Choisissez votre maximum et votre minimum ! Conçu et designé par Clément Legoubé.">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/number.css">
     <link rel="icon" href="ressources/logo/logo.png" type="image/x-icon"/>
-    <title>GenX | Le Générateur aux multiples fonctionnalités !</title>
+    <title>GenX | Générez dès maintenant un nombre !</title>
 </head>
 <body>
     <details>
@@ -22,18 +22,18 @@
         <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="ressources/icones/nav/mdp.png"><a href="password.html">Mot de Passe</a></summary>
     </details>
     <nav>
-        <a class="title_link"href="index.html">
+        <a class="title_link"href="en/index.html">
         <div class="title_box">
             <img src="ressources/logo/logo.png" alt="Logo GenX">
             <h1>Gen</h1><h1>X</h1>
         </div>
         </a>
         <div class="links_box">
-            <div class="links_nav link_home active">
+            <div class="links_nav link_home">
                 <img class="icone_filter" src="ressources/icones/nav/home.png" alt="Icone de Maison">
                 <a href="index.html" class="link_navigation">Accueil</a>
             </div>
-            <div class="links_nav">
+            <div class="links_nav active">
                 <img class="icone_filter" src="ressources/icones/nav/nombres.png" alt="Icone de Nombres">
                 <a href="number.html" class="link_navigation">Nombre</a>
             </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="links_nav">
                 <img src="ressources/icones/nav/uk.png" alt="Icone Drapeau UK">
-                <a href="en/index.html" class="link_navigation">Go to English Version</a>
+                <a href="#" class="link_navigation">Go to English Version</a>
             </div>
             <div class="legal_info">
                 <a href="#" class="link_info">Mentions Légales</a>&ensp;●&ensp;
@@ -77,32 +77,42 @@
     <main>
     
         <section class="clipped-section first_section">
-            <h1>Bienvenue sur <span class="Gen">Gen</span><span class="X">X</span></h1>
-            <h2>le <i>Générateur polyvalent</i> &nbsp;!</h2>
+            <h1>Générez un nombre</h1>
+            <h2>d'un <i>simple clique</i> &nbsp;!</h2>
         </section>
         <br><br>
-        <section class="second_section">
-            <h3>Générez <u><i>gratuitement</i></u> &nbsp;des nombres, des mots de passe et bien encore grâce à <span class="Gen">Gen</span><span class="X">X</span>&ensp; !</h3>
-            <br><br>
-            <a href="#links-section"><button>Générer dès maintenant ▶</button></a>
-        </section>
-        <section class="second_bandeau">
-            <h4>Découvrez nos modules !</h4>
-        </section>
-        <section id="links-section">
-            <div class="links_container">
-                <div class="box">
-                    <a href="number.html"><button><img src="ressources/icones/nav/nombres.png" alt="Icone de nombres">Générez un nombre</button></a>
-                    <a href="letter.html"><button><img src="ressources/icones/nav/lettre.png" alt="Icone de lettres">Générer une lettre</button></a>
-                    <a href="pseudo.html"><button><img src="ressources/icones/nav/pseudo.png" alt="Icone d'utilisateur">Générer un pseudo</button></a>
+        <section>
+            <div class="form_container">
+                <div class="form_box">
+                    
+            <p class="text_info">Sélectionnez une fourchette de nombre :</p>
+                <div class="min-max_container">
+                        <div class="min-max_box">
+                            <label for="min">Min :</label><br>
+                    <input type="number" id="min" min="0" step="1" value="0">
                 </div>
-                <div class="box">
-                    <a href="color.html"><button><img src="ressources/icones/nav/couleur.png" alt="Icone de palette de couleur">Générez une couleur</button></a>
-                    <a href="lorem.html"><button><img src="ressources/icones/nav/lorem.png" alt="Icone de fichier texte">Générer du Lorem Ipsum</button></a>
-                    <a href="password.html"><button><img src="ressources/icones/nav/mdp.png" alt="Icone de mot de passe">Générer un mot de passe</button></a>
+                <div class="min-max_box">
+                <label for="max">Max :</label><br>
+                    <input type="number" id="max" min="0" step="1" value="100">
+                </div>
+                </div>
+    <br><br>
+            <p class="text_info">Sélectionnez la quantité de nombre(s) souhaité(s) :</p><br>
+                <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" min="1" step="1" value="1">
+    <br><br>
+                <button class="button-generate" onclick="generateNumbers()">Générer</button>
+                </div>
+                <div class="form_box">
+                    <button onclick="copyText()" class="button-copy"><span class="span_button_emission_star">
+                    <img src="ressources/icones/buttons/copier.png" alt="Copier" height="25px" width="25px">Copier le résultat</span></button><br><br>
+            <p class="text_info">Résultat(s) :</p><br>
+                <div id="result"><br></div>
                 </div>
             </div>
         </section>
+
+        
     </main>
     <br><br><br>
     <footer>
@@ -110,5 +120,6 @@
         <br>
         <p class="text_conception">Conçu & Designé par Clément Legoubé</p>
     </footer>
+    <script src="js/number.js"></script>
 </body>
 </html>

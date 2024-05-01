@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GenX | The multi-function generator! - Discover our nickname generator! Generate as many as you like, on several themes, for free! Made and Designed by Clément Legoubé.">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/pseudo.css">
+    <link rel="icon" href="/ressources/logo/logo.png" type="image/x-icon"/>
+    <title>GenX | Generate now an username</title>
+</head>
+<body>
+    <details>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_logo" src="/ressources/logo/logo.png"><span class="Gen">Gen</span><span class="X">X</span></summary>
+        <summary></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/home.png"><a href="index.html">Home</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/nombres.png"><a href="number.html">Number</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/lettre.png"><a href="letter.html">Letter</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/pseudo.png"><a href="pseudo.html">Username</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/couleur.png"><a href="color.html">Colour</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/lorem.png"><a href="lorem.html">Lorem Ipsum</a></summary>
+        <summary><img alt="Icone de Barre de Navigation" class="icone_nav" src="/ressources/icones/nav/mdp.png"><a href="password.html">Password</a></summary>
+    </details>
+    <nav>
+        <a class="title_link"href="index.html">
+        <div class="title_box">
+            <img src="/ressources/logo/logo.png" alt="Logo GenX">
+            <h1>Gen</h1><h1>X</h1>
+        </div>
+        </a>
+        <div class="links_box">
+            <div class="links_nav link_home">
+                <img class="icone_filter" src="/ressources/icones/nav/home.png" alt="Icone de Maison">
+                <a href="index.html" class="link_navigation">Home</a>
+            </div>
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/nombres.png" alt="Icone de Numbers">
+                <a href="number.html" class="link_navigation">Number</a>
+            </div>
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/lettre.png" alt="Icone de Lettres">
+                <a href="letter.html" class="link_navigation">Letter</a>
+            </div>
+            <div class="links_nav active">
+                <img class="icone_filter" src="/ressources/icones/nav/pseudo.png" alt="Icone d'Utilisateur">
+                <a href="pseudo.html" class="link_navigation">Username</a>
+            </div>
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/couleur.png" alt="Icone de Palette de Couleur">
+                <a href="color.html" class="link_navigation">Colour</a>
+            </div>
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/lorem.png" alt="Icone de Fichier texte">
+                <a href="lorem_ipsum.htmm" class="link_navigation">Lorem Ipsum</a>
+            </div>
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/mdp.png" alt="Icone de Mot de Passe">
+                <a href="password.html" class="link_navigation">Password</a>
+            </div>
+        </div>
+        <div class="settings_box">
+            <div class="links_nav">
+                <img class="icone_filter" src="/ressources/icones/nav/partager.png" alt="Icone de partage">
+                <a href="#" class="link_navigation">Share the Website</a>
+            </div>
+            <div class="links_nav">
+                <img src="/ressources/icones/nav/france.png" alt="Icone Drapeau UK">
+                <a href="/index.html" class="link_navigation">Aller sur la Version Française</a>
+            </div>
+            <div class="legal_info">
+                <a href="#" class="link_info">Legal Notice</a>&ensp;●&ensp;
+                <a href="#" class="link_info">Website Map</a>&ensp;●&ensp; 
+                <a href="#" class="link_info">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+    
+        <section class="clipped-section first_section">
+            <h1>Generate an username</h1>
+            <h2>with a <i>simple click</i> &nbsp;!</h2>
+        </section>
+        <br><br>
+        <section>
+            <div class="form_container">
+            <div class="form_box">
+            <label for="theme">Choose a theme :</label>
+            <input type="text" id="theme" list="themes" placeholder="Select a theme..." required>
+            <datalist id="themes">
+                <option value="fantaisie">
+                <option value="science-fiction">
+                <option value="animaux">
+                <option value="nature">
+                <option value="espace">
+                <option value="mythologie">
+                <option value="couleurs">
+                <option value="nourriture">
+                <option value="temps">
+                <option value="émotions">
+                <option value="musique">
+                <option value="véhicules">
+                <option value="technologie">
+                <option value="sports">
+                <option value="corps humain">
+                <option value="livres">
+                <option value="signes du zodiaque">
+                <option value="pays">
+                <option value="films">
+            </datalist>
+            <p class="text_info_datalist">Mandatory selection | For a nickname without a theme, select "fantasie".</p>
+            <br>
+<label for="inclureChiffres">
+            <input type="checkbox" id="inclureChiffres" checked>
+            Include figures</label>
+            <br>           
+            <label for="nombreLettres">Number of letters :</label>
+            <input type="number" id="nombreLettres" min="1" max="20" value="8">
+            <br>
+            <label for="nombrePseudos">Number of usernames :</label>
+            <input type="number" id="nombrePseudos" min="1" value="10">
+            <br>
+            <button class="button-generate" onclick="genererPseudos()">Generate</button>
+        </div>
+            <div class="form_box">
+                <button onclick="copyText()" class="button-copy"><span class="span_button_emission_star">
+                    <img src="/ressources/icones/buttons/copier.png" alt="Copier" height="25px" width="25px">Copy the result</span></button><br><br>            
+                <p class="text_info">Results :</p>
+                <br>
+                <div id="pseudosGeneres"></div>
+            </div>
+        </div>
+        </section>        
+    </main>
+    <br><br><br>
+    <footer>
+        <a href="#">© 2024 - GenX | All rights reserved</a>
+        <br>
+        <p class="text_conception">Made & Designed by Clément Legoubé</p>
+    </footer>
+    <script src="js/pseudo.js"></script>
+</body>
+</html>
+

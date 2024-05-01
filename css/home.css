@@ -1,0 +1,154 @@
+:root {
+    /* TEXT COLOR */
+
+    --principal-color: #DAB7A4;
+    --links-nav-color: #DAB7A4;
+    --white-color: #fff;
+    --form-color: rgb(7, 175, 241);
+
+    /* BACKGROUND */
+
+    --light-mode: #fff;
+
+    /* SIZE */
+
+    --principal-size: 1em;
+    --links-nav-size: 1.15em;
+    --title-size: 2em;
+
+    /* FONT-FAMILY */
+
+    --first-police: "Great Vibes";
+    --second-police: "Patrick Hand";
+    --third-police: "Shrikhand";
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.second_section h3 {
+    font-size: 1.7em;
+    text-align: center;
+    color: var(--principal-color);
+}
+
+.second_section button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--white-color);
+    font-size: 1.3em;
+    background-color: var(--principal-color);
+    box-shadow: 3px 3px 6px 4px rgba(0.2, 0.2, 0.2, 0.1);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.second_section button:hover {
+    box-shadow: 5px 5px 7px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    font-size: 1.4em;
+    transition: 0.2s;
+}
+
+.second_bandeau {
+    margin-top: 130px;
+    clip-path: polygon(100% 15%, 100% 100%, 0% 85%, 0 0%);
+    background-color: var(--principal-color);
+    padding: 30px 0px;
+}
+
+.second_bandeau h4 {
+    font-size: 1.7em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.links_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.box:nth-child(1) {
+    display: grid;
+    justify-items: end;
+    gap: 25px;
+}
+
+.box:nth-child(2) {
+    display: grid;
+    justify-items: start;
+    gap: 25px;
+}
+
+.links_container button {
+    padding: 20px 50px;
+    min-width: 350px;
+    max-height: 80px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--principal-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 3px rgba(0.1, 0.1, 0.1, 0.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.links_container button:hover {
+    background-color: var(--white-color);
+    color: var(--principal-color);
+    outline: 1px solid var(--principal-color);
+    transition: 0.2s ease;
+}
+
+.links_container button:hover img {
+    filter: invert(100%) brightness(55%) sepia(100%);
+}
+
+.links_container a {
+    text-decoration: none;
+}
+
+.links_container button img {
+    height: 35px;
+    width: auto;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    .links_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .links_container button {
+        padding: 15px 30px;
+        width: 80%;
+        max-width: 300px;
+        min-width: 300px;
+        font-size: 1em;
+    }
+    .box {
+        justify-content: center;
+    }
+    .second_section {
+        padding: 0px 10px;
+    }
+}
