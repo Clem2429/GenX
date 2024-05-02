@@ -40,15 +40,23 @@ Menu burger :
 Croix :
 <a href="https://www.flaticon.com/fr/icones-gratuites/fermer" title="fermer icônes">Fermer icônes créées par Anas Mannaa - Flaticon</a>
 
+Lampe :
+<a href="https://www.flaticon.com/fr/icones-gratuites/lampe" title="lampe icônes">Lampe icônes créées par Muhammad_Usman - Flaticon</a>
 
+Info :
+<a href="https://www.flaticon.com/fr/icones-gratuites/info" title="info icônes">Info icônes créées par Stockio - Flaticon</a>
 
+cgu :
+<a href="https://www.flaticon.com/fr/icones-gratuites/termes-et-conditions" title="termes et conditions icônes">Termes et conditions icônes créées par Anggara - Flaticon</a>
 
+mentions legales :
+<a href="https://www.flaticon.com/fr/icones-gratuites/legal" title="légal icônes">Légal icônes créées par Freepik - Flaticon</a>
 
+plan du site :
+<a href="https://www.flaticon.com/fr/icones-gratuites/plan-du-site" title="plan du site icônes">Plan du site icônes créées par adrianadam - Flaticon</a>
 
-
-
-
-
+contact :
+<a href="https://www.flaticon.com/fr/icones-gratuites/contact" title="contact icônes">Contact icônes créées par Icongeek26 - Flaticon</a>
 
 
 

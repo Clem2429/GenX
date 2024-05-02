@@ -202,7 +202,7 @@ footer .text_conception {
 /* RESPONSIVE */
 
 @media screen and (min-width: 800px) {
-    details {
+    .navbar-mobile {
         display: none;
     }
 }
@@ -220,7 +220,7 @@ footer .text_conception {
 
 /* NAVBAR RESPONSIVE */
 
-details {
+.navbar-mobile {
     width: 100%;
     position: fixed;
     top: 0%;
@@ -230,20 +230,27 @@ details {
 }
 
 summary {
-    font-size: 1em;
+    font-size: 1.2em;
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 5px 0px 5px 7.5px;
     color: var(--white-color);
+}
+
+.summary-mobile {
+    padding: 5px 0px 5px 7.5px;
+}
+
+.sous-summary-mobile {
+    padding: 5px 0px 5px 30px;
 }
 
 summary .Gen,
 summary .X {
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
- details summary .X::after {
+.navbar-mobile summary .X::after {
     content: "≡";
     position: absolute;
     right: 3.5%;
@@ -254,17 +261,17 @@ summary .X {
 }
 
 @media screen and (max-width: 800px) {
-    details summary .X::after {
+    .navbar-mobile summary .X::after {
         position: absolute;
-        top: -35%!important;
+        top: -40%!important;
     }
-    details[open] summary .X::after {
-        position: asbolute;
-        top: -2%!important;
+    .navbar-mobile[open] summary .X::after {
+        position: absolute;
+        top: -4.5%!important;
     }
 }
 
-details[open] summary .X::after {
+.navbar-mobile[open] summary .X::after {
     transform: rotate(360deg);
     content: "✕";
     top: -2%;
@@ -288,6 +295,12 @@ summary .icone_nav {
     filter: invert(100%);
 }
 
+summary .icone_flag {
+    height: 25px;
+    width: auto;
+    margin-right: 7.5px;
+}
+
 summary a {
     color: var(--white-color);
     text-decoration: none;
@@ -297,4 +310,16 @@ summary a {
 summary:hover {
     background-color: #da8d64ab;
 }
+
+.sous-navbar-mobile .first-summary-dropdown::after {
+    content: "▼";
+    position: absolute;
+    right: 3.5%;
+    display: inline-block;
+    transition: transform 0.25s ease-in-out;
+}
+
+.sous-navbar-mobile[open] .first-summary-dropdown::after {
+    transform: rotate(360deg);
+    content: "▲"
 }
