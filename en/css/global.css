@@ -202,7 +202,7 @@ footer .text_conception {
 /* RESPONSIVE */
 
 @media screen and (min-width: 800px) {
-    details {
+    .navbar-mobile {
         display: none;
     }
 }
@@ -220,7 +220,7 @@ footer .text_conception {
 
 /* NAVBAR RESPONSIVE */
 
-details {
+.navbar-mobile {
     width: 100%;
     position: fixed;
     top: 0%;
@@ -230,46 +230,54 @@ details {
 }
 
 summary {
-    font-size: 1em;
+    font-size: 1.3em;
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 5px 0px 5px 7.5px;
     color: var(--white-color);
+}
+
+.summary-mobile {
+    padding: 7px 0px 7px 7.5px;
+}
+
+.sous-summary-mobile {
+    padding: 7px 0px 7px 30px;
 }
 
 summary .Gen,
 summary .X {
-    font-size: 1.25em;
+    font-size: 1.4em;
 }
 
- details summary .X::after {
-    content: "≡";
+.icone-nav-menu {
     position: absolute;
     right: 3.5%;
-    font-size: 3em;
-    top: -25%!important;
-    display: inline-block;
-    transition: transform 0.4s ease-out;
+    filter: invert(100%);
+    height: 40px;
+    width: auto;
 }
 
-@media screen and (max-width: 800px) {
-    details summary .X::after {
-        position: absolute;
-        top: -35%!important;
-    }
-    details[open] summary .X::after {
-        position: asbolute;
-        top: -2%!important;
-    }
+.navbar-mobile .icone-burger {
+    visibility: visible;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
 }
 
-details[open] summary .X::after {
-    transform: rotate(360deg);
-    content: "✕";
-    top: -2%;
-    font-size: 2em;
-    right: 3.5%;
+.navbar-mobile[open] .icone-burger {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar-mobile .icone-burger-close {
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.navbar-mobile[open] .icone-burger-close {
+    visibility: visible;
+    opacity: 1;
 }
 
 summary .icone_logo {
@@ -288,6 +296,12 @@ summary .icone_nav {
     filter: invert(100%);
 }
 
+summary .icone_flag {
+    height: 25px;
+    width: auto;
+    margin-right: 7.5px;
+}
+
 summary a {
     color: var(--white-color);
     text-decoration: none;
@@ -297,4 +311,16 @@ summary a {
 summary:hover {
     background-color: #da8d64ab;
 }
+
+.sous-navbar-mobile .first-summary-dropdown::after {
+    content: "▼";
+    position: absolute;
+    right: 3.5%;
+    display: inline-block;
+    transition: transform 0.25s ease-in-out;
+}
+
+.sous-navbar-mobile[open] .first-summary-dropdown::after {
+    transform: rotate(360deg);
+    content: "▲"
 }
