@@ -10,12 +10,6 @@ Nombres :
 Alphabet :
 <a href="https://www.flaticon.com/fr/icones-gratuites/elementaire" title="élémentaire icônes">Élémentaire icônes créées par Freepik - Flaticon</a>
 
-Filles :
-<a href="https://www.flaticon.com/fr/icones-gratuites/fille" title="fille icônes">Fille icônes créées par Freepik - Flaticon</a>
-
-Garçons :
-<a href="https://www.flaticon.com/fr/icones-gratuites/jeune" title="jeune icônes">Jeune icônes créées par Good Ware - Flaticon</a>
-
 Mdp :
 <a href="https://www.flaticon.com/fr/icones-gratuites/mot-de-passe" title="mot de passe icônes">Mot de passe icônes créées par Freepik - Flaticon</a>
 
@@ -51,12 +45,14 @@ cgu :
 
 mentions legales :
 <a href="https://www.flaticon.com/fr/icones-gratuites/legal" title="légal icônes">Légal icônes créées par Freepik - Flaticon</a>
-
+  
 plan du site :
 <a href="https://www.flaticon.com/fr/icones-gratuites/plan-du-site" title="plan du site icônes">Plan du site icônes créées par adrianadam - Flaticon</a>
 
 contact :
 <a href="https://www.flaticon.com/fr/icones-gratuites/contact" title="contact icônes">Contact icônes créées par Icongeek26 - Flaticon</a>
 
+Copier :
+<a href="https://www.flaticon.com/fr/icones-gratuites/copie" title="copie icônes">Copie icônes créées par Creatype - Flaticon</a>
 
-
+18

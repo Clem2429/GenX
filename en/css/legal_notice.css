@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Patrick+Hand&family=Shrikhand&display=swap');
+
+:root {
+    /* TEXT COLOR */
+
+    --principal-color: #DAB7A4;
+    --links-nav-color: #DAB7A4;
+    --white-color: #fff;
+    --form-color: rgb(7, 175, 241);
+
+    /* BACKGROUND */
+
+    --light-mode: #fff;
+
+    /* SIZE */
+
+    --principal-size: 1em;
+    --links-nav-size: 1.15em;
+    --title-size: 2em;
+
+    /* FONT-FAMILY */
+
+    --first-police: "Great Vibes";
+    --second-police: "Patrick Hand";
+    --third-police: "Shrikhand";
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    padding: 5px;
+}
+.title-page {
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 0 auto;
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+}
+
+h1 {
+    margin-left: 25px;
+}
+
+h2 {
+    margin-left: 50px
+}
+
+h3 {
+    margin-left: 75px;
+}
+
+.list-legal-notice {
+    margin-left: 40px;
+}
+
+.strong-character {
+    color: orange;
+}
+
+a {
+    color: #DAB7A4;
+}
+
+.list-legal-notice .line-icone-legal {
+    line-height: 30px;
+    list-style: none;
+}
+
+.list-legal-notice .line-icone-legal a {
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+
