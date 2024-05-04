@@ -1,0 +1,120 @@
+:root {
+    /* TEXT COLOR */
+
+    --principal-color: #DAB7A4;
+    --links-nav-color: #DAB7A4;
+    --white-color: #fff;
+    --form-color: rgb(7, 175, 241);
+
+    /* BACKGROUND */
+
+    --light-mode: #fff;
+
+    /* SIZE */
+
+    --principal-size: 1em;
+    --links-nav-size: 1.15em;
+    --title-size: 2em;
+
+    /* FONT-FAMILY */
+
+    --first-police: "Great Vibes";
+    --second-police: "Patrick Hand";
+    --third-police: "Shrikhand";
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .form-box:nth-child(1) {
+            display: grid;
+            padding-left: 25px;
+        }
+        .form-box:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .text-info {
+            color: var(--principal-color);
+            font-size: 1.2em;
+        }
+        
+        label {
+            font-size: 1.1em;
+            color: var(--form-color);
+        }
+        
+        #color-picker {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-radius: 5px;
+        }
+        .button-copy {
+            width: 50%;
+            font-size: 1em!important;
+            color: var(--white-color);
+            background-color: var(--principal-color);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px 3px rgba(0.1, 0.1, 0.1, 0.1);
+        }
+        
+        .button-copy span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .button-copy img {
+            filter: invert(100%);
+        }
+        
+        #color-preview {
+            outline: 2px solid var(--principal-color);
+            height: auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            padding: 7.5px;
+            color: var(--principal-color);
+            font-size: 1.5em;
+            font-family: serif;
+            border-radius: 10px;
+        }
+        
+        /* RESPONSIVE */
+        
+        @media screen and (max-width: 800px) {
+            .form-container {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .form-box:nth-child(2) {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                margin-top: 10px;
+            }
+            #color-preview {
+                width: 90%;
+            }
+            .button-copy {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+        }
